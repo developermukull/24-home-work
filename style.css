@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+
+.fixed{
+    width: 1320px;
+    margin: auto;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* start css */
+.header-section{
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 13px 0;
+}
+.header-logo{
+    width: 30%;
+}
+
+.header-logo img {
+	float: left;
+	width: 45px;
+	height: auto;
+	margin-right: 10px;
+}
+.header-logo span {
+	margin-top: 8px;
+	display: inline-block;
+	font-size: 27px;
+	font-weight: 500;
+    transition: .3s;
+}
+.header-logo span:hover{
+    color: #ddd;
+}
+.header-menu{
+    width: 55%;
+}
+.header-menu ul{
+
+}
+.header-menu ul li{
+    display: inline-block;
+}
+.header-menu ul li a{
+    display: inline-block;
+    padding: 0 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+    position: relative;
+}
+/* dwop down menu */
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul {
+	position: absolute;
+	top: 168%;
+	left: 0;
+	width: 225px;
+	background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 999;
+}
+.header-menu ul li ul li:nth-child(1){
+    border: 0;
+}
+.header-menu ul li ul li{
+    display: block;
+    border-top: 1px solid #ddd;
+   
+}
+.header-menu ul li ul li a{
+    display: block;
+    padding: 0 0 20px 20px;
+
+}
+/* hover-part */
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* 2nd dropdown menu */
+
+
+.livearrow::before {
+	content: "\f0d7";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	position: absolute;
+	top: -2px;
+	left: 89%;
+	font-size: 19px;
+}
+.demoArrow::before{
+    content: "\f0d7";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	position: absolute;
+	top: -2px;
+	left: 89%;
+	font-size: 19px;
+}
+.header-menu ul li:nth-child(2){
+    padding-right: 20px;
+}
+.header-menu ul li a:hover{
+    color: #6278df;
+}
+.header-button{
+    width: 15%;
+}
+
+.defaultButton {
+	text-decoration: none;
+	display: inline-block;
+	border: 2px solid #6278df;
+	padding: 10px 27px;
+	border-radius: 5px;
+	font-weight: 700;
+	color: #6278df;
+    transition: .5s;
+}
+.defaultButton:hover{
+    background: #6278df;
+    color: #fff;
+}
+/* banner-section */
+.banner-section{
+    background: url(./img/mbr-4.jpg) no-repeat center center;
+    padding: 220px 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    display: block;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: -1;
+}
+.banner-content h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+.banner-content h1{
+    font-size: 60px;
+    padding: 40px 0;
+}
+.banner-content a{
+    display: inline-block;
+    padding: 20px 40px;
+    background: #fff;
+    color: #7d7d7d;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+
+}
+.banner-content a:hover{
+    background: #6278df;
+    color: #fff;
+}
+
+/* video-section */
+
+.video-section{
+    background: #f6f8ff;
+    padding: 100px 0
+}
+.video-left{
+    width: 48%;
+}
+.content-right{
+    width: 48%;
+}
+.content-right h1 {
+	font-size: 46px;
+	margin-bottom: 35px;
+	font-weight: 400;
+}
+.content-right p {
+	color: #767676;
+	font-size: 21px;
+	line-height: 30px;
+}
+/* /service-section */
+.service-section{
+    padding: 50px 0;
+}
+.service-title{
+    padding: 73px 0;
+}
+.service-title h1{
+    margin-bottom: 30px;
+    font-size: 60px;
+    
+}
+.service-title p{
+    color: #767676;
+    font-size: 27px;
+}
+
+.service-items{}
+.service-icon span {
+	float: left;
+	width: 94px;
+	height: 100px;
+	color: #6278df;
+	font-size: 47px;
+	margin-left: -17px;
+}
+.service-box {
+	width: 31%;
+	padding: 58px;
+	box-sizing: border-box;
+	margin-left: 2%;
+	margin-bottom: 30px;
+	box-shadow: 0px 1px 10px 0px;
+}
+
+.service-content h2{
+    margin-bottom: 20px;
+}
+.service-content p {
+	font-size: 19px;
+	color: #767676;
+}
